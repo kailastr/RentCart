@@ -14,8 +14,11 @@ function App() {
   return (
     <>
       <Routes >
+        <Route path='/' element={<Navigate to='/RentCartLogin' />} />
         <Route path='/RentCartLogin' element={< LoginPage />} />
+
         <Route path='/LocationPermission' element={<LocationPage />} />
+        
         <Route path='/RentCart' element={<IndexLayout />} >
           < Route index element={<IndexPage />} />
         </Route>
