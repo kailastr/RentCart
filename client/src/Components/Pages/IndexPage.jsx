@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 //components
-import ProductCard from '../Components/Card/ProductCard';
+import ProductCard from '../Card/ProductCard'
 
 const IndexPage = () => {
 

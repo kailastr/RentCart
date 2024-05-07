@@ -1,8 +1,8 @@
 import React from 'react';
 
 //image
-import mapImg from '../images/mapImg.png';
-import locationImg from '../images/locationImg.jpg'
+import mapImg from '../../images/mapImg.png'
+import locationImg from '../../images/locationImg.jpg'
 
 const LocationPage = () => {
     return (

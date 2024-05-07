@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Outlet } from 'react-router-dom';
 
-import IndexNavbar from '../Navbar/IndexNavbar';
-import IndexBottomNav from '../Navbar/IndexBottomNav';
+import IndexNavbar from '../Components/Navbar/IndexNavbar'
+import IndexBottomNav from '../Components/Navbar/IndexBottomNav'
 
 const DefaultLayout = () => {
     return (

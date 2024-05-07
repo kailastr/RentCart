@@ -1,7 +1,7 @@
 import React from 'react';
 
 //images
-import img from '../images/img.jpg';
+import img from '../../images/img.jpg';
 
 //icons
 import { MdOutlineMobileFriendly } from "react-icons/md";

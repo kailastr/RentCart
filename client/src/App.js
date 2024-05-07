@@ -3,12 +3,14 @@ import './App.css';
 import { Route, Routes, Navigate } from 'react-router-dom'
 
 //pages
-import LoginPage from './Pages/LoginPage';
-import LocationPage from './Pages/LocationPage';
-import IndexPage from './Pages/IndexPage';
+import LoginPage from './Components/Pages/LoginPage'
+import LocationPage from './Components/Pages/LocationPage';
+import IndexPage from './Components/Pages/IndexPage';
+import ProfilePage from './Components/Pages/ProfilePage';
 
 //layouts
 import IndexLayout from './Layout/IndexLayout';
+import AddPage from './Components/Pages/AddPage';
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
         <Route path='/RentCartLogin' element={< LoginPage />} />
 
         <Route path='/LocationPermission' element={<LocationPage />} />
-        
+
         <Route path='/RentCart' element={<IndexLayout />} >
           < Route index element={<IndexPage />} />
+          < Route path='Profile' element={<ProfilePage />} />
+          < Route path='AddNewRental' element={<AddPage />} />
         </Route>
       </Routes>
     </>

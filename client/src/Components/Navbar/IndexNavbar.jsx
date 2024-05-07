@@ -1,14 +1,14 @@
 import React from 'react';
 
-import logo from '../images/Logo.png'
+import logo from '../../images/Logo.png';
 
 //icons
 import { FaSearch } from "react-icons/fa";
 import { GrHomeRounded } from "react-icons/gr";
 
 //carousal
-import IndexMdNavCategoryCarousal from '../Components/Carousal/IndexMdNavCategoryCarousal';
-import IndexSmNavCategoryCarousal from '../Components/Carousal/IndexSmNavCategoryCarousal';
+import IndexMdNavCategoryCarousal from '../../Components/Carousal/IndexMdNavCategoryCarousal';
+import IndexSmNavCategoryCarousal from '../../Components/Carousal/IndexSmNavCategoryCarousal';
 
 //Navbar for large screen view
 function LgNav() {
