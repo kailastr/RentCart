@@ -23,13 +23,13 @@ function LgNav() {
                                 alt="EV logo"
                                 className='h-28'
                             />
-                            <div className='bg-emerald-100 w-full h-11 rounded-full flex items-center'>
+                            <div className='bg-emerald-100 w-full h-11  flex items-center'>
                                 <input
                                     type="search"
                                     name="nearbyChargingSearch"
                                     id="nearbyChargingSearch"
                                     placeholder='Search for what you want to Rent..'
-                                    className='w-10/12 h-full px-4 py-2 text-gray-700 bg-white border border-emerald-300 rounded-full focus:outline-none focus:border-emerald-500 focus:bg-white'
+                                    className='w-10/12 h-full px-4 py-2 text-gray-700 bg-white border border-emerald-300  focus:outline-none focus:border-emerald-500 focus:bg-white'
                                 />
                                 <div className='w-2/12 h-full flex items-center justify-center text-emerald-600 hover:text-emerald-800'>
                                     <FaSearch />
@@ -87,7 +87,7 @@ function MdNav() {
     return (
         <nav className='w-full'>
             <div className='w-full  h-24 flex justify-center items-center'>
-                <div className='w-9/12 h-full  flex justify-between items-center'>
+                <div className='w-9/12 h-full  flex justify-between items-center gap-5'>
                     <div className='w-2/12'>
                         <img
                             src={logo}
@@ -95,13 +95,13 @@ function MdNav() {
                             className='w-28'
                         />
                     </div>
-                    <div className='w-10/12 bg-emerald-100 h-2/4 rounded-full flex items-center'>
+                    <div className='w-10/12 bg-emerald-100 h-2/4  flex items-center'>
                         <input
                             type="search"
                             name="nearbyChargingSearch"
                             id="nearbyChargingSearch"
                             placeholder='Search for what you want to Rent..'
-                            className='w-9/12 h-full px-4 py-2 text-gray-700 bg-white border border-emerald-300 rounded-full focus:outline-none focus:border-emerald-500 focus:bg-white'
+                            className='w-9/12 h-full px-4 py-2 text-gray-700 bg-white border border-emerald-300  focus:outline-none focus:border-emerald-500 focus:bg-white'
                         />
                         <div className='w-3/12 h-full px-5 flex items-center gap-5 text-emerald-700'>
                             <p className='text-lg'>Search</p>
@@ -122,7 +122,7 @@ function MdNav() {
 function SmNav() {
     return (
         <nav className='w-full'>
-            <div className='w-full  h-24 flex justify-center items-center px-3'>
+            <div className='w-full  h-24 flex justify-center items-center px-5'>
                 <div className='w-full h-full  flex justify-between items-center gap-2'>
                     <div className='w-3/12'>
                         <img
@@ -131,13 +131,13 @@ function SmNav() {
                             className='w-28'
                         />
                     </div>
-                    <div className='w-9/12 bg-emerald-100 h-2/4 rounded-full flex items-center'>
+                    <div className='w-9/12 bg-emerald-100 h-2/4 flex items-center'>
                         <input
                             type="search"
                             name="nearbyChargingSearch"
                             id="nearbyChargingSearch"
                             placeholder='Search for what you want to Rent..'
-                            className='w-10/12 h-full px-4 py-2 text-gray-700 bg-white border border-emerald-300 rounded-full focus:outline-none focus:border-emerald-500 focus:bg-white'
+                            className='w-10/12 h-full px-4 py-2 text-gray-700 bg-white border border-emerald-300 focus:outline-none focus:border-emerald-500 focus:bg-white'
                         />
                         <div className='w-2/12 h-full flex items-center justify-center gap-5 text-emerald-700'>
                             <FaSearch />
