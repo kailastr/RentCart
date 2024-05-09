@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import logo from '../../images/Logo.png';
 
 //icons
@@ -23,6 +25,7 @@ function LgNav() {
                                 alt="EV logo"
                                 className='h-28'
                             />
+                            {/* search section */}
                             <div className='bg-emerald-100 w-full h-11  flex items-center'>
                                 <input
                                     type="search"
@@ -36,35 +39,37 @@ function LgNav() {
                                 </div>
                             </div>
                         </div>
+                        {/* navigation section */}
                         <div className='w-7/12 h28 text-emerald-500 flex items-center justify-end gap-12 font-semibold text-lg pr-10'>
                             <div>
-                                <p className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     LOCATIONS
-                                </p>
+                                </Link>
                             </div>
                             <div>
-                                <p className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     ADS
-                                </p>
+                                </Link>
                             </div>
                             <div>
-                                <p className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/AddNewRental'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     ADD
-                                </p>
+                                </Link>
                             </div>
                             <div>
-                                <p className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/AddNewRental'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     CHATS
-                                </p>
+                                </Link>
                             </div>
                             <div>
-                                <p className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/Profile'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     PROFILE
-                                </p>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
+                {/* Chategories section */}
                 <div className='w-full h-8 bg-emerald-50 border-t border-emerald-400 shadow-md'>
                     <div className='w-full flex justify-center items-center gap-5'>
                         <p className='font-semibold'>Chategories : </p>

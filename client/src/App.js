@@ -7,6 +7,7 @@ import LoginPage from './Components/Pages/LoginPage'
 import LocationPage from './Components/Pages/LocationPage';
 import IndexPage from './Components/Pages/IndexPage';
 import ProfilePage from './Components/Pages/ProfilePage';
+import ProductPage from './Components/Pages/ProductPage';
 
 //layouts
 import IndexLayout from './Layout/IndexLayout';
@@ -25,6 +26,7 @@ function App() {
           < Route index element={<IndexPage />} />
           < Route path='Profile' element={<ProfilePage />} />
           < Route path='AddNewRental' element={<AddPage />} />
+          <Route path='Product/:id_' element={<ProductPage />} />
         </Route>
       </Routes>
     </>

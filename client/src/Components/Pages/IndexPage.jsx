@@ -7,6 +7,7 @@ const IndexPage = () => {
 
     const Products = [
         {
+            id_: "2255",
             title: "OnePlus nord 2",
             description: "Good Condition, 1 year used",
             price: "10,000",
@@ -15,6 +16,7 @@ const IndexPage = () => {
             date: "Man 23",
         },
         {
+            id_: "369",
             title: "OnePlus nord 2",
             description: "Good Condition, 1 year used",
             price: "10,000",
@@ -23,6 +25,7 @@ const IndexPage = () => {
             date: "Man 23",
         },
         {
+            id_: "39458743qfgdf345",
             title: "OnePlus nord 2",
             description: "Good Condition, 1 year used",
             price: "10,000",
@@ -31,6 +34,7 @@ const IndexPage = () => {
             date: "Man 23",
         },
         {
+            id_: "39458743qfgdf345",
             title: "OnePlus nord 2",
             description: "Good Condition, 1 year used",
             price: "10,000",
@@ -39,6 +43,7 @@ const IndexPage = () => {
             date: "Man 23",
         },
         {
+            id_: "39458743qfgdf345",
             title: "OnePlus nord 2",
             description: "Good Condition, 1 year used",
             price: "10,000",

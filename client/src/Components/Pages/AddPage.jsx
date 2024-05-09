@@ -25,7 +25,7 @@ const AddPage = () => {
         <>
             <div className='w-full flex justify-center items-center my-10'>
                 <div className='w-8/12'>
-                    <h1 className='text-2xl'>ADD YOUR RENTINGS</h1>
+                    <h1 className='text-3xl'>ADD YOUR RENTINGS</h1>
                     <div className='w-full border border-emerald-400'>
                         <form action="">
                             <div className='w-full flex-col justify-center items-center py-5 px-10'>
