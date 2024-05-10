@@ -10,7 +10,7 @@ import { CgProfile } from "react-icons/cg";
 function MdBottomNav() {
     return (
         <>
-            <div className='w-full h-14 bg-emerald-50 absolute bottom-0 border-t border-emerald-300 flex items-center justify-center'>
+            <div className='w-full h-14 bg-emerald-50 fixed bottom-0 border-t border-emerald-300 flex items-center justify-center'>
                 <div className='w-10/12 flex items-center justify-center gap-20 text-sm font-semibold text-emerald-700'>
                     <div>
                         <FaRegMap className='text-xl mx-auto' />
@@ -41,7 +41,7 @@ function MdBottomNav() {
 function SmBottomNav() {
     return (
         <>
-            <div className='w-full h-14 bg-emerald-50 sticky bottom-0 border-t border-emerald-300 flex items-center justify-center'>
+            <div className='w-full h-14 bg-emerald-50 fixed bottom-0 border-t border-emerald-300 flex items-center justify-center'>
                 <div className='w-11/12 flex items-center justify-center gap-10 text-xs font-semibold text-emerald-700'>
                     <div>
                         <FaRegMap className='text-xl mx-auto' />

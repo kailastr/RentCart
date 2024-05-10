@@ -5,7 +5,7 @@ const ProductCard = (props) => {
     return (
         <div className=' w-full '>
             <Link to={`Product/${props.id_}`}>
-                <div className='m-2 p-2 border border-emerald-600 hover:shadow-lg hover:border-emerald-400 transition duration-200 ease-in-out cursor-pointer'>
+                <div className='m-2 p-2 border bg-gradient-to-tr from-emerald-50 to-emerald-200 hover:from-white hover:to-emerald-100  border-emerald-600 hover:shadow-lg hover:border-emerald-400 transition duration-300 ease-in-out cursor-pointer' style={{backgroundColor: 'gradient'}}>
                     <div className='w-full flex items-center justify-center'>
                         <div className='w-11/12 h-40 bg-cover bg-center rounded-md' style={{ backgroundImage: `url(${props.image})` }} />
                     </div>

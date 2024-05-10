@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/Logo.png';
 
 //icons
-import { FaSearch } from "react-icons/fa";
-import { GrHomeRounded } from "react-icons/gr";
+import { FaSearch, FaBook, FaMobileAlt } from "react-icons/fa";
+import { MdElectricBolt, MdSportsSoccer } from "react-icons/md";
+import { GiWoodenChair } from "react-icons/gi";
+import { PiDress } from "react-icons/pi";
 
 //carousal
 import IndexMdNavCategoryCarousal from '../../Components/Carousal/IndexMdNavCategoryCarousal';
@@ -70,17 +72,15 @@ function LgNav() {
                     </div>
                 </div>
                 {/* Chategories section */}
-                <div className='w-full h-8 bg-emerald-50 border-t border-emerald-400 shadow-md'>
+                <div className='w-full h-8 bg-gradient-to-r from-white to-emerald-200 border-t border-emerald-400 shadow-md'>
                     <div className='w-full flex justify-center items-center gap-5'>
                         <p className='font-semibold'>Chategories : </p>
-                        <p>Car</p>
-                        <p>Motorcycle</p>
-                        <p>Mobile Phone</p>
-                        <p>Electronics</p>
-                        <p>Furnitures</p>
-                        <p>Fashion</p>
-                        <p>Book</p>
-                        <p>Sports</p>
+                        <p className='flex items-center justify-center gap-1'> <FaMobileAlt />Mobile Phone</p>
+                        <p className='flex items-center justify-center gap-1'> <MdElectricBolt /> Electronics</p>
+                        <p className='flex items-center justify-center gap-1'> <GiWoodenChair /> Furnitures</p>
+                        <p className='flex items-center justify-center gap-1'> < PiDress /> Fashion</p>
+                        <p className='flex items-center justify-center gap-1'> <FaBook /> Book</p>
+                        <p className='flex items-center justify-center gap-1'> <MdSportsSoccer /> Sports</p>
                     </div>
                 </div>
             </nav>
