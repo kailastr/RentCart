@@ -1,35 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-//components
+import { useParams } from 'react-router-dom';
+
+//component
 import ProductCard from '../Card/ProductCard';
-import Filter from '../Filter/Index'
+import Filter from '../Filter/Index';
+const ChategoryPage = () => {
 
-//material ui
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+    const { chategory } = useParams();
 
-const IndexPage = () => {
-
-    const [searchingKm, setSearchingKm] = useState();
-
-    function distanceValue(value) {
-        setSearchingKm(value);
-        return `${value}km`
-    }
-
-    function priceValue(value) {
-        return `${value}Rs`
-    }
-
-    const [price, setPriceRange] = useState([20, 37]);
-
-    const handleChange = (event, newValue) => {
-        setPriceRange(newValue);
-    };
-
-    const filerSearch = () => {
-        console.log(`price: ${price} and Distance: ${searchingKm}`);
-    }
+    // if (chategory === 'Mobile' || ) {
+    //     page not found
+    // }
 
     const Products = [
         {
@@ -81,19 +63,21 @@ const IndexPage = () => {
 
     return (
         <>
+
             <Filter />
 
-            <section className='w-full flex items-center justify-center my-5'>
-                <div className='w-10/12 flex items-center justify-center'>
+            <div className='w-full flex items-center justify-center my-10'>
+                <div className='w-10/12'>
+                    <h1 className='text-3xl m-2'>{chategory} Section</h1>
                     <div className='w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
                         {Products.map((item, index) => (
                             <ProductCard {...item} key={index} />
                         ))}
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }
 
-export default IndexPage
+export default ChategoryPage

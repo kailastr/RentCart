@@ -75,12 +75,12 @@ function LgNav() {
                 <div className='w-full h-8 bg-gradient-to-r from-white to-emerald-200 border-t border-emerald-400 shadow-md'>
                     <div className='w-full flex justify-center items-center gap-5'>
                         <p className='font-semibold'>Chategories : </p>
-                        <p className='flex items-center justify-center gap-1'> <FaMobileAlt />Mobile Phone</p>
-                        <p className='flex items-center justify-center gap-1'> <MdElectricBolt /> Electronics</p>
-                        <p className='flex items-center justify-center gap-1'> <GiWoodenChair /> Furnitures</p>
-                        <p className='flex items-center justify-center gap-1'> < PiDress /> Fashion</p>
-                        <p className='flex items-center justify-center gap-1'> <FaBook /> Book</p>
-                        <p className='flex items-center justify-center gap-1'> <MdSportsSoccer /> Sports</p>
+                        <Link to={'Mobile'}><p className='flex items-center justify-center gap-1 hover:text-emerald-600'> <FaMobileAlt />Mobile Phone</p></Link>
+                        <Link to={'Electronics'}><p className='flex items-center justify-center gap-1  hover:text-emerald-600'> <MdElectricBolt /> Electronics</p></Link>
+                        <Link to={'Furniture'}><p className='flex items-center justify-center gap-1  hover:text-emerald-600'> <GiWoodenChair /> Furnitures</p></Link>
+                        <Link to={'Fashion'}><p className='flex items-center justify-center gap-1  hover:text-emerald-600'> < PiDress /> Fashion</p></Link>
+                        <Link to={'Book'}><p className='flex items-center justify-center gap-1  hover:text-emerald-600'> <FaBook /> Book</p></Link>
+                        <Link to={'Sports'}><p className='flex items-center justify-center gap-1  hover:text-emerald-600'> <MdSportsSoccer /> Sports</p></Link>
                     </div>
                 </div>
             </nav>
