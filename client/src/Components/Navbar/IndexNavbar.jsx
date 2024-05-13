@@ -44,7 +44,7 @@ function LgNav() {
                         {/* navigation section */}
                         <div className='w-7/12 h28 text-emerald-500 flex items-center justify-end gap-12 font-semibold text-lg pr-10'>
                             <div>
-                                <Link to={'/RentCart/'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/Location'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     LOCATIONS
                                 </Link>
                             </div>

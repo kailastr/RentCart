@@ -5,6 +5,16 @@ import mapImg from '../../images/mapImg.png'
 import locationImg from '../../images/locationImg.jpg'
 
 const LocationPage = () => {
+
+    const getLocation = () => {
+        navigator.geolocation.getCurrentPosition((position) => {
+            const { latitude, longitude } = position.coords;
+            alert(`Lat : ${latitude} and Long : ${longitude}`);
+        }, (error) => {
+            console.error('Error getting location:', error);
+        });
+    }
+
     return (
         <>
             <div className='w-full h-screen flex items-center justify-center'>
@@ -27,8 +37,12 @@ const LocationPage = () => {
                                 </div>
                                 <div className='w-full flex items-center justify-center my-5'>
                                     <div className='w-1/3'>
-                                        <button className='bg-white hover:bg-emerald-100 transition duration-200 ease-in-out w-full py-2 rounded-md my-2'>Get My Location</button>
-                                        <button className='border hover:bg-blue-200 hover:text-blue-700 transition duration-200 ease-in-out border-white text-white w-full py-2 rounded-md my-2'>Skip</button>
+                                        <button
+                                            className='bg-white hover:bg-emerald-100 transition duration-200 ease-in-out w-full py-2 rounded-md my-2'
+                                            onClick={getLocation}
+                                        >
+                                            Get My Location
+                                        </button>
                                     </div>
                                 </div>
                             </div>
