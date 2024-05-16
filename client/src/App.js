@@ -10,6 +10,8 @@ import ProfilePage from './Components/Pages/ProfilePage';
 import AddPage from './Components/Pages/AddPage';
 import ProductPage from './Components/Pages/ProductPage';
 import ChategoryPage from './Components/Pages/ChategoryPage';
+import AdsPage from './Components/Pages/AdsPage';
+
 import PageNotFound from './Components/Pages/PageNotFound';
 
 //layouts
@@ -31,6 +33,7 @@ function App() {
           < Route path='AddNewRental' element={<AddPage />} />
           <Route path='Product/:id_' element={<ProductPage />} />
           <Route path=':chategory' element={<ChategoryPage />} />
+          <Route path='Ads' element={<AdsPage />} />
         </Route>
 
         <Route path='/*' element={<PageNotFound />} />

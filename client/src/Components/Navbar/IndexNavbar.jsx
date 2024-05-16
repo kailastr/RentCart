@@ -22,11 +22,13 @@ function LgNav() {
                 <div className='w-full h-28 px-10'>
                     <div className='flex justify-between gap-5'>
                         <div className=' w-5/12 h-28 flex items-center gap-7'>
-                            <img
-                                src={logo}
-                                alt="EV logo"
-                                className='h-28'
-                            />
+                            <Link to={'/RentCart'} className='h-28 flex items-center justify-center'>
+                                <img
+                                    src={logo}
+                                    alt="EV logo"
+                                    className='h-28'
+                                />
+                            </Link>
                             {/* search section */}
                             <div className='bg-emerald-100 w-full h-11  flex items-center'>
                                 <input
@@ -49,7 +51,7 @@ function LgNav() {
                                 </Link>
                             </div>
                             <div>
-                                <Link to={'/RentCart/'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
+                                <Link to={'/RentCart/Ads'} className='hover:text-emerald-300 transform duration-300 ease-in-out cursor-pointer'>
                                     ADS
                                 </Link>
                             </div>
